@@ -50,8 +50,9 @@
 
   function highlightNav() {
     let current = '';
+    var offset = header ? header.offsetHeight + 24 : 120;
     sections.forEach(function (s) {
-      if (window.scrollY >= s.offsetTop - 110) current = s.id;
+      if (window.scrollY >= s.offsetTop - offset) current = s.id;
     });
     navLinks.forEach(function (a) {
       a.classList.toggle('nav__link--active', a.getAttribute('href') === '#' + current);
