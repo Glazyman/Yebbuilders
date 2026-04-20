@@ -16,11 +16,13 @@
   function openNav() {
     toggle?.setAttribute('aria-expanded', 'true');
     navPill?.classList.add('is-open');
+    document.body.classList.add('nav-open');
     document.body.style.overflow = 'hidden';
   }
   function closeNav() {
     toggle?.setAttribute('aria-expanded', 'false');
     navPill?.classList.remove('is-open');
+    document.body.classList.remove('nav-open');
     document.body.style.overflow = '';
   }
 
