@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YEB Builders – Professional Construction & Remodeling Services</title>
+  <meta name="description" content="YEB Builders delivers top-notch construction, remodeling, and maintenance services in the New York area. Licensed & insured. Call 914-688-1066 for a free quote." />
+  <meta property="og:title" content="YEB Builders – Professional Construction & Remodeling" />
+  <meta property="og:description" content="Top-notch construction and remodeling. Licensed & insured. Call 914-688-1066." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.yebbuilders.com/" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+  <link rel="preload" href="assets/workers.jpg" as="image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+
+      <a href="#home" class="nav__logo" aria-label="YEB Builders – home">
+        <div class="logo__dark-wrap">
+          <img src="assets/logo.png" alt="YEB Builders" class="logo__img" />
+        </div>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle"
+              aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__pill" id="nav-pill" aria-label="Main navigation">
+        <ul role="list">
+          <li><a href="#services" class="nav__link">Services</a></li>
+          <li><a href="#process"  class="nav__link">Process</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#why-us"   class="nav__link">Why Us</a></li>
+          <li><a href="#contact"  class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__cta">
+        <a href="tel:+19146881066" class="btn btn--dark">
+          Call Now
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero__content container">
+
+        <h1 class="hero__title reveal">
+          We Build Your Vision,<br>
+          <em>Step&nbsp;by&nbsp;Step</em>
+        </h1>
+
+        <p class="hero__subtitle reveal">
+          Welcome to a partnership dedicated to exceptional construction results.<br>
+          We specialize in delivering high-quality services tailored to your needs.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#services" class="btn btn--outline-dark btn--lg">Learn More</a>
+          <a href="tel:+19146881066" class="btn btn--dark btn--lg">
+            Get a Free Quote
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero__img-wrap container">
+        <div class="hero__img-frame">
+          <img src="assets/workers.jpg" alt="YEB Builders team on a construction project" fetchpriority="high" />
+          <div class="hero__float-badge hero__float-badge--l">
+            <span class="fb__num">100%</span>
+            <span class="fb__label">Satisfaction Guaranteed</span>
+          </div>
+          <div class="hero__float-badge hero__float-badge--r">
+            <span class="fb__num">10+</span>
+            <span class="fb__label">Years Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         TICKER / MARQUEE
+    ═══════════════════════════════════════════ -->
+    <div class="ticker" aria-hidden="true" role="presentation">
+      <div class="ticker__track">
+        <span>Remodeling</span><span class="ticker__dot">•</span>
+        <span>Custom Builds</span><span class="ticker__dot">•</span>
+        <span>Interior &amp; Exterior</span><span class="ticker__dot">•</span>
+        <span>Maintenance</span><span class="ticker__dot">•</span>
+        <span>Commercial</span><span class="ticker__dot">•</span>
+        <span>Residential</span><span class="ticker__dot">•</span>
+        <span>Project Management</span><span class="ticker__dot">•</span>
+        <span>Renovation &amp; Fit-Out</span><span class="ticker__dot">•</span>
+        <!-- duplicate for seamless loop -->
+        <span>Remodeling</span><span class="ticker__dot">•</span>
+        <span>Custom Builds</span><span class="ticker__dot">•</span>
+        <span>Interior &amp; Exterior</span><span class="ticker__dot">•</span>
+        <span>Maintenance</span><span class="ticker__dot">•</span>
+        <span>Commercial</span><span class="ticker__dot">•</span>
+        <span>Residential</span><span class="ticker__dot">•</span>
+        <span>Project Management</span><span class="ticker__dot">•</span>
+        <span>Renovation &amp; Fit-Out</span><span class="ticker__dot">•</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         STATS
+    ═══════════════════════════════════════════ -->
+    <section class="stats section" id="stats">
+      <div class="container">
+        <div class="stats__grid">
+          <div class="stat-card reveal">
+            <span class="stat-card__num">10+</span>
+            <span class="stat-card__label">Years of Experience</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-card__num">500+</span>
+            <span class="stat-card__label">Projects Completed</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-card__num">100%</span>
+            <span class="stat-card__label">Satisfaction Rate</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-card__num">Licensed</span>
+            <span class="stat-card__label">&amp; Fully Insured</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SERVICES
+    ═══════════════════════════════════════════ -->
+    <section class="services section section--white" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow reveal">What We Do</span>
+          <h2 class="section__title reveal">Our Services</h2>
+          <p class="section__lead reveal">Comprehensive construction and remodeling solutions for residential and commercial projects.</p>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card reveal">
+            <span class="sc__num">01</span>
+            <div class="sc__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 12l-8.5 8.5c-.83.83-.83 2.17 0 3s2.17.83 3 0L18 15"/><path d="M18.36 8.22l1.42 1.42-6.37 6.36-1.41-1.41"/><path d="M22 2l-4.5 4.5M17.5 2L22 6.5"/></svg>
+            </div>
+            <h3 class="sc__title">Remodeling</h3>
+            <p class="sc__desc">Transform your existing space with expert renovations that breathe new life into every room—kitchens, bathrooms, living areas, and more.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="sc__num">02</span>
+            <div class="sc__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="sc__title">Custom Builds</h3>
+            <p class="sc__desc">From concept to completion, we construct exactly what you envision with precision craftsmanship and quality materials that last a lifetime.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="sc__num">03</span>
+            <div class="sc__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 class="sc__title">Interior &amp; Exterior</h3>
+            <p class="sc__desc">Stunning finishes inside and out. We work with top designers to ensure every surface is handled with expert care and lasting beauty.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="sc__num">04</span>
+            <div class="sc__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="sc__title">Maintenance</h3>
+            <p class="sc__desc">Keep your property in peak condition with reliable, responsive maintenance services before small issues become costly repairs.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="sc__num">05</span>
+            <div class="sc__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <h3 class="sc__title">Commercial</h3>
+            <p class="sc__desc">Professional commercial construction solutions that meet industry standards, regulatory requirements, and your business deadlines.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="sc__num">06</span>
+            <div class="sc__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3 class="sc__title">Residential</h3>
+            <p class="sc__desc">Your home is our priority. We deliver residential projects tailored to your lifestyle—on time, on budget, and built to perfection.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROCESS
+    ═══════════════════════════════════════════ -->
+    <section class="process section section--dark" id="process">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow reveal">How We Work</span>
+          <h2 class="section__title section__title--inv reveal">Our Process</h2>
+          <p class="section__lead section__lead--inv reveal">Simple, transparent, and stress-free from start to finish.</p>
+        </div>
+        <div class="process__grid">
+
+          <div class="process-step reveal">
+            <div class="ps__num">01</div>
+            <div class="ps__body">
+              <h3>Free Consultation</h3>
+              <p>We start by listening. Share your vision, budget, and timeline—we'll put together the right plan, at no cost to you.</p>
+            </div>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="ps__num">02</div>
+            <div class="ps__body">
+              <h3>Custom Proposal</h3>
+              <p>We provide a detailed project plan with clear pricing, materials, and milestones. Transparent quotes with no hidden costs.</p>
+            </div>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="ps__num">03</div>
+            <div class="ps__body">
+              <h3>Expert Execution</h3>
+              <p>Our skilled team gets to work with precision and care, keeping you informed at every stage so there are no surprises.</p>
+            </div>
+          </div>
+
+          <div class="process-step reveal">
+            <div class="ps__num">04</div>
+            <div class="ps__body">
+              <h3>Final Walkthrough</h3>
+              <p>We don't leave until you're completely satisfied. A thorough walkthrough ensures every detail meets our high standards.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PROJECTS / GALLERY
+    ═══════════════════════════════════════════ -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow reveal">Our Work</span>
+          <h2 class="section__title reveal">Recent Projects</h2>
+          <p class="section__lead reveal">A glimpse at the quality and craftsmanship we deliver on every job.</p>
+        </div>
+        <div class="projects__grid">
+
+          <div class="project-card project-card--tall reveal">
+            <img src="assets/hero.jpg" alt="Luxury residential renovation completed by YEB Builders" loading="lazy" />
+            <div class="project-card__info">
+              <span class="project-card__tag">Residential</span>
+              <h3>Luxury Home Renovation</h3>
+            </div>
+          </div>
+
+          <div class="projects__col-right">
+            <div class="project-card reveal">
+              <img src="assets/kitchen2.jpg" alt="Modern kitchen remodel by YEB Builders" loading="lazy" />
+              <div class="project-card__info">
+                <span class="project-card__tag">Interior</span>
+                <h3>Modern Kitchen Remodel</h3>
+              </div>
+            </div>
+            <div class="project-card reveal">
+              <img src="assets/project.jpg" alt="Architectural interior renovation" loading="lazy" />
+              <div class="project-card__info">
+                <span class="project-card__tag">Commercial</span>
+                <h3>Architectural Interior</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         WHY US
+    ═══════════════════════════════════════════ -->
+    <section class="why-us section section--white" id="why-us">
+      <div class="container">
+        <div class="why-us__inner">
+
+          <div class="why-us__img reveal">
+            <div class="img-frame">
+              <img src="assets/craftsman.jpg" alt="YEB Builders expert craftsmen at work" loading="lazy" />
+              <div class="img-frame__badge">
+                <span>Top Rated</span>
+                <span>Builders</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-us__text">
+            <span class="section__eyebrow reveal">The YEB Difference</span>
+            <h2 class="section__title reveal">Why Choose YEB Builders?</h2>
+            <p class="reveal">We work with the best interior &amp; exterior designers to make sure you are 100% satisfied when we leave. Our commitment to excellence and attention to detail sets us apart in the construction industry.</p>
+            <p class="reveal">Every project is treated with the utmost care and professionalism — from the first call to the final walkthrough.</p>
+
+            <ul class="why-us__list">
+              <li class="reveal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>Top interior &amp; exterior design partnerships</span>
+              </li>
+              <li class="reveal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>100% satisfaction guaranteed on every project</span>
+              </li>
+              <li class="reveal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>Fast, reliable timelines — no surprises</span>
+              </li>
+              <li class="reveal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>Fully licensed &amp; insured for your peace of mind</span>
+              </li>
+              <li class="reveal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>Free consultation and fully transparent pricing</span>
+              </li>
+            </ul>
+
+            <div class="why-us__cta reveal">
+              <a href="tel:+19146881066" class="btn btn--dark btn--lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.64 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012.55 1.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.7a16 16 0 006.39 6.39l.88-.88a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                Start Your Project
+              </a>
+              <span class="cta-note">Free consultation available</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════════ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__card">
+
+          <div class="contact__left">
+            <span class="section__eyebrow reveal">Ready to Build?</span>
+            <h2 class="section__title reveal">Let's Start Your Project Today</h2>
+            <p class="reveal">Give us a call — we'll listen to your vision and put together a free, no-obligation quote. We're ready to deliver results that exceed expectations.</p>
+            <a href="tel:+19146881066" class="contact__phone reveal">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.64 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012.55 1.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.7a16 16 0 006.39 6.39l.88-.88a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              914-688-1066
+            </a>
+            <div class="contact__pills reveal">
+              <span class="pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Licensed
+              </span>
+              <span class="pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Insured
+              </span>
+              <span class="pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                Free Quote
+              </span>
+            </div>
+          </div>
+
+          <div class="contact__right reveal">
+            <h3 class="hours__heading">Business Hours</h3>
+            <dl class="hours__list">
+              <div class="hours__row">
+                <dt>Monday – Friday</dt>
+                <dd>7:00 AM – 6:00 PM</dd>
+              </div>
+              <div class="hours__row hours__row--closed">
+                <dt>Saturday</dt>
+                <dd>Closed</dd>
+              </div>
+              <div class="hours__row hours__row--emrg">
+                <dt>Sunday</dt>
+                <dd>Emergency calls only</dd>
+              </div>
+            </dl>
+            <a href="tel:+19146881066" class="btn btn--dark btn--lg contact__cta-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.64 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012.55 1.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.7a16 16 0 006.39 6.39l.88-.88a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              Call 914-688-1066
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#home" class="footer__logo" aria-label="YEB Builders – back to top">
+          <img src="assets/logo.png" alt="YEB Builders" class="logo__img logo__img--footer" />
+        </a>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#projects">Projects</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="tel:+19146881066" class="btn btn--gold">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.64 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012.55 1.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 8.7a16 16 0 006.39 6.39l.88-.88a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          914-688-1066
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 YEB Builders. All rights reserved.</p>
+        <p>Licensed &amp; Insured Construction Company</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
