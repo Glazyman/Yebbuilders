@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=26" />
 </head>
 <body>
 
@@ -35,19 +35,31 @@
         </div>
       </a>
 
-      <button class="nav__toggle" id="nav-toggle"
-              aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button
+        type="button"
+        class="nav__toggle"
+        id="nav-toggle"
+        aria-label="Open navigation menu"
+        aria-controls="nav-pill"
+        aria-expanded="false"
+      >
+        <span class="nav__toggle__bar"></span>
+        <span class="nav__toggle__bar"></span>
+        <span class="nav__toggle__bar"></span>
       </button>
 
-      <nav class="nav__pill" id="nav-pill" aria-label="Main navigation">
-        <ul role="list">
+      <nav class="nav__pill primary-nav" id="nav-pill" aria-label="Primary navigation">
+        <ul role="list" class="nav__drawer-list">
           <li><a href="#services" class="nav__link">Services</a></li>
           <li><a href="#process"  class="nav__link">Process</a></li>
           <li><a href="#projects" class="nav__link">Projects</a></li>
           <li><a href="#why-us"   class="nav__link">Why Us</a></li>
           <li><a href="#contact"  class="nav__link">Contact</a></li>
         </ul>
+        <div class="nav__drawer-cta">
+          <a href="#contact" class="nav__drawer-cta__book">Get a free quote</a>
+          <a href="tel:+19146881066" class="nav__drawer-cta__phone" aria-label="Call 914-688-1066">914-688-1066</a>
+        </div>
       </nav>
 
       <div class="header__cta">
@@ -279,9 +291,9 @@
     <section class="projects section" id="projects">
       <div class="container">
         <div class="section__header">
-          <span class="section__eyebrow reveal">Our Work</span>
-          <h2 class="section__title reveal">Recent Projects</h2>
-          <p class="section__lead reveal">A glimpse at the quality and craftsmanship we deliver on every job.</p>
+          <span class="section__eyebrow reveal">What We Do</span>
+          <h2 class="section__title reveal">Featured Projects</h2>
+          <p class="section__lead reveal">A look at some of our recent residential and commercial work — built with precision and finished to last.</p>
         </div>
         <div class="projects__grid">
 
@@ -310,6 +322,122 @@
             </div>
           </div>
 
+        </div>
+
+        <div class="photo-gallery reveal" id="photo-gallery" aria-label="YEB project photos and videos">
+          <div class="photo-gallery__header">
+            <span class="section__eyebrow photo-gallery__eyebrow">Our Work</span>
+            <h3 class="photo-gallery__title">Photos &amp; Videos</h3>
+          </div>
+          <div class="photo-gallery__top-row">
+            <div class="photo-gallery-scroll-controls" id="photoGalleryControls" role="toolbar" aria-label="Scroll the project gallery">
+              <button type="button" class="photo-gallery__nav photo-gallery__nav--prev" id="photo-gallery-prev" title="Previous" aria-label="Show previous project items">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button type="button" class="photo-gallery__nav photo-gallery__nav--next" id="photo-gallery-next" title="Next" aria-label="Show next project items">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="photo-gallery__viewport">
+          <div
+            class="photo-gallery__scroll"
+            id="photo-gallery-scroll"
+            role="region"
+            aria-label="Project gallery: scroll horizontally to see all items"
+            tabindex="0"
+          >
+          <ul class="photo-grid" role="list">
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v01.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2nLXJ6Lwuit7VmgPvELGYYeLldnMkvxEnjT2ZjX7B2hx8x-CyatUtKdtFv20cedLv05Nq17HLjK84EQBZd604msq3a9ByL0OLf43bnfXnUxxckijbvjGCqMcuwk-xt2vWfdSx4fDIC64DwbAtv0dOq_2Q7U85a4C8Jl2ECdVlncNH3yFoRS2tV6sdrB1Zf3UZuJefC3PvXbJtuXJJe7fZ7jgQkcz1dv-EoF-79CAlDe16dI14o" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <button type="button" class="photo-tile" data-lightbox aria-label="View project photo 2 larger">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczO2ixtnSKFQf-P2aqr7Lm9aqZnlQQhXgHjHxrgTEfGO7XCxKrO8UIJYrCz25ewO7TILpY2QGFaTfhOWxnpM5wAyaXmdxeXhUoAIaPWVrNFZt_fjXTHt=w1200" alt="YEB Builders project photo" width="400" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+              </button>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v02.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2mL1VgohddnxeIwc1fW41Vi_cj0Ytfj-dIg-uMLBwjU-sV23o3hSH0D-dIe6hh2BcgSN7acWQAQiekxAMbgwUQzmJv359gfVtDJDl2skJE_5MP6fRtazK_2x78qzOm7Pwra3DEwVV6t0NMw_icntL9EBosP7nIFjYvlVF_elExAb3WH5QJohsy9dEHAhVwrLYwN1yzW7Tyt2qldyqKmmj0v3c1ladOWG1-4OL41a4p7nhoEiLQ" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v03.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2nkyJLG96wLaXrlfx0f88ABUNeP6IHEhulrfuRH30t2KZliAq28IdEHCLnoQj23DjX4phKaRfJBrFBYrb17llXwDpuNVZC8Ycuot6_w6C3IwJWb6aWVXNpd7Ti3uwh4lIRARa9elPXvs-OmQoJ4apWS97lebKtV25tmL4JU8nnIV2uDh0o_Q9znHKhwGZajIsqVaIKYwRGNAEAssWLLhNlT2qpckXIs6YDL68DRoXMP0diQAug" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v04.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2l37WQ-CusHGfpvez1aOcS4YsFDys3Jb4jdBFr6cBpRuEPeyFtCeYPkpxWN7GsUDHcdog22SQKKR1V5FJG6nVzFXGDMpK9VSZ_c_myWdusJFe6f7_EDI_wF1waBoWzBl2owt5ZxZQ9CGWwz-uMRKyQGVXv2W2ya20oFE4NNGPtDJvGifeiMTatDqIYbQMYRiS8uGKUJ3ba7oEcJZcbqFy0ZTcl2DAZa977J2nTn9tpdJAPfaYE" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v05.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2nNFEfQeqPMemhfUczdyilK7WLjIdxX_s5w4dWWjF2OVo1QIsf_DEgGIvprvoLyAINQiJQspS4jWrgS8RG-zaU7u18BFCN3dUvBfWcPe2XvLj0nXf0NwWqxlYx3chG1h49bNNJPLi3omCxrZpQWo4DGh-4FMryFfook9InV438vImnMN5O8IKewZxnc66Tq1v2i3j14_PHRvgHw5ZXzOAdJ0K7-5mJy-HDbwFG6A3Z5m0lHoRU" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v06.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2kH6j2ok983ChTXNd_z06Z2HVp3E5xD7PkzRyqOg2ywo5RyjaOs4BWk-z7CwE78zRUzb2caQIpSXm3nywjPUbbaOPUGWfJZ3sBi0Zb4sR5F7VmRO_-XP0YOrvii4rrzuvzf8jTtVSQnbuSs6Jo7Xzxdid1rAUZm1DKJ4-n32XMm5QXmpWR0qFVDlz8LoWOOOBk9QjV5N4wNvyP2fvSzY6SQaUb6ny9xBAYgm88PuH1YxXV2VKY" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v07.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2n-fLbT4q8yOHijOicJlAlMRahrYbn_0HWxenyH2phVXen65bmjXCCJy0vpnxWhtm1juxb4EKoZz0ZtGOmU6Yc7yfqvFRiR2AoT1YhC3wlDlkt2Avh8U-jpkpvM4xgfj2d6xtexo7FmHiuaUhLgrGgHtu7T6xu0Zjco5994K_0EL4-VaUU0aasV10MVW0-QskTvjx97v0RYZqvmFnJJpEqelB6-9RVmmPxv19cAyLJeL1lXIY0" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v08.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2mCgy0L82QL-VTHKKTSKZ5or_FVBBff5Sqst1gxao0Bg9jbMuAbZdUYD4DoSllCep0z4zyWhPmgNDa7HECQC1SZVkR41C_pUzxbosUWNhyhVnkNLFomvfWgZHvv5tLHGUIhVk3t7SlxX4rwo7Qk-VDO7EfKdo0zzXtQR8IClBh7QeCQpAaH-lGUVz4oKY3QV3030eYogUGA0FcevpdaKm-0alQWZW636YnjtiCp7MpYuw6mJDA" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v09.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2k8nhPuTz_c9DNbk8Ti92LyQ_CbTee31jNA4QkkJnnlypdC8Xs0F1G9PWDW8xPIwLNCzoQy7sl0ONDRbs8qHXYZhuVsys2bZkOa3pUYMGcORCXJRhBdh6prvbTTOYeU9_zjdiMHaLEklgoFAfhVGc23ZobieboovQ0XXlzMUVEKGtlUEToMM2irp7WOL0uhG9DFvvRTo6oOkDmgIdeb-oLd8YiRNn9CScmNA0b2hvur2cGI3D4" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v10.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2k8mjf2I2A9jpvI1D4mcGIeT20ca4pfZOYS0IuOsX6wAPe3iJgwdIuAwIT0HEMm1jKNuPUmPH4by6vm_yG96qIPe1QtLTGwcPWlimagJNN_n0W6121XtD3oZuzKm-JFBKdZT_M-z15Joc3aGZWH9MdlKdK026IOzyDGeEKD9SWfTDKi1FJ3DDE9bbmo33zjY72yKq9_Vr9_Zl_KlclyOu-MUDCjt6HXL3Dla9-nJMBoc5hWQG0" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <div class="photo-tile photo-tile--video" aria-label="Project video, use the play control on the tile">
+                <video class="photo-tile__video" controls playsinline preload="metadata" referrerpolicy="no-referrer" poster="assets/video-posters/v11.jpg">
+                  <source src="https://video-downloads.googleusercontent.com/ADGPM2kdIJZBllDkfzedOcT1O2MI8eSfsEPTUb1K1j21KlOrCMhOJMFggnHFUcjKD1GKKCoNcutXmiaYBENTYeU1_rjMnortikLlei3UOfTFJ-75ELB3zfZ4oIUd42zNY4igSp1xF9VwgoAQYZp7B4skctkKfTY7HBKbTPPaXbAEdOqJQDohMaUPgmT52eOFmV4mXsRQW89lEYJRIJnoFxbkdHBqVS5BcjCifxtN0MkNKTrToIFRexQ" type="video/mp4" />
+                </video>
+              </div>
+            </li>
+            <li class="photo-grid__item reveal" role="listitem">
+              <button type="button" class="photo-tile" data-lightbox aria-label="View project photo 13 larger">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczOzYYPy86EaWfCXrTBceVxGZSwtVR017uXRJ4p7MMYDddCRQwTqgpf4KtzmFutPCvbc_sZVokus0Bw9W_aVv_udEZe1eCcW42KsxbBrheUIz6d2VUNF=w1200" alt="YEB Builders project photo" width="400" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+              </button>
+            </li>
+          </ul>
+          </div>
+          </div>
         </div>
       </div>
     </section>
@@ -459,6 +587,13 @@
       </div>
     </div>
   </footer>
+
+  <dialog class="lightbox" id="gallery-lightbox" aria-label="Enlarged project photo">
+    <div class="lightbox__content">
+      <button type="button" class="lightbox__close" id="lightbox-close" aria-label="Close">×</button>
+      <img class="lightbox__img" src="" alt="" width="1600" height="1200" />
+    </div>
+  </dialog>
 
   <a href="https://wa.me/19146881066?text=Hi%20YEB%20Builders%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20project."
      class="wa-widget"
